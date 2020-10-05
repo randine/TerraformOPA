@@ -1,9 +1,9 @@
 # This is a POC to use OPA to evaluate a Terraform file to see if it can create subnets in AWS
 
 You need to have AWS CLI installed and configured so you have your credentials stored in ~/.aws/credentials
-
+'''
 aws configure
-
+'''
 Once AWS is configured you can then use Terraform.
 This main.tf aims to create a VPC and 2 subnets in AWS. 
 
