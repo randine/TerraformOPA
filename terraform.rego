@@ -13,9 +13,6 @@ weights = {
 # Consider exactly these resource types in calculations
 resource_types = {"aws_subnet"}
 
-#at least Name and Environment tags are required.
-minimum_tags = {"Name", "Environment"}
-
 # Authorization holds if score for the plan is acceptable and no changes are made to IAM
 default authz = false
 authz {
