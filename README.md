@@ -1,4 +1,4 @@
-# This is a POC to use OPA to evaluate a Terraform file to see if it can create subnets in AWS
+# This is a POC to use OPA to evaluate a Terraform file to see if subnets can be created in AWS
 
 You need to have AWS CLI installed and configured so you have your credentials stored in ~/.aws/credentials
 ```
