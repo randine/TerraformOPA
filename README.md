@@ -32,4 +32,5 @@ Output: false
 So it failed the test. 
 
 If you edit the blast radius score in the terraform.rego file to be above 20, then it will give a 'true' value which would then let the subnets be created. 
+This is just a manual test, but the real power would be when this is automated as part of a CI/CD pipeline to allow or deny changes on the fly. 
 
