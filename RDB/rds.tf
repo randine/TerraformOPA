@@ -26,6 +26,6 @@ resource "aws_db_instance" "default" {
   username             = "foo"
   password             = "thisisatest"
   parameter_group_name = "default.mysql5.7"
-  db_subnet_group_name = "vpc-0d13470c3cf93e14d"
+  
 }
 
