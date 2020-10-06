@@ -42,6 +42,7 @@ copy the address above
 
 ## There is a policy for AWS config in the directory AWSconfig. 
 This sets a policy rds-cluster-deletion-protection-enabled so that a RDS database can not be deleled. 
+File: AWS_Config.tf
 
 ```
 terraform init
@@ -52,6 +53,7 @@ terraform apply -auto-approve
 
 ## Change to the RDS directory
 This terraform file tries to add an additional subnet to the VPC created above. 
+File: rds.tf
 ```
 terraform init
 terraform plan
