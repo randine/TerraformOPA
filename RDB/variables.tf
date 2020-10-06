@@ -1,3 +1,3 @@
-variable "VPC_ID" {
-#  default     = ""
+variable "vpc_id" {
+
 }
