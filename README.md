@@ -34,3 +34,35 @@ So it failed the test.
 If you edit the blast radius score in the terraform.rego file to be above 20, then it will give a 'true' value which would then let the subnets be created. 
 This is just a manual test, but the real power would be when this is automated as part of a CI/CD pipeline to allow or deny changes on the fly. 
 
+We need to get the vpc id to enter into the next terraform. 
+```
+terraform show | grep -i vpc_id
+```
+copy the address above
+
+## There is a policy for AWS config in the directory AWSconfig. 
+This sets a policy rds-cluster-deletion-protection-enabled so that a RDS database can not be deleled. 
+
+```
+terraform init
+terraform plan
+
+terraform apply -auto-approve
+```
+
+## Change to the RDS directory
+This terraform file tries to add an additional subnet to the VPC created above. 
+```
+terraform init
+terraform plan
+```
+Enter in the vpc-id variable from above. 
+```
+terraform apply
+Enter the vpc-id
+```
+If we now run terraform destroy, you can see that the RDS data base will can not be deleted. 
+
+
+
+
