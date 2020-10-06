@@ -8,7 +8,7 @@ provider "aws" {
 }
 
 resource "aws_subnet" "main-new" {
-  vpc_id     = "vpc-0d13470c3cf93e14d"
+  vpc_id     = var.vpc_id
   cidr_block = "10.0.3.0/24"
 
   tags = {
