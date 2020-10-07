@@ -20,7 +20,7 @@ terraform show -json tfplan.binary > tfplan.json
 Next we evaluate the tfplan.json with the OPA rego file. 
 The file is looking changes with AWS subnets (change, Delete, modify) and adds a score against the plan. A blast radius of 5 has been set and a weight of 10 to create a new subnet. 
 ```
-opa eval --format pretty --data test.rego --input tfplan.json "data.terraform.analysis.score"
+opa eval --format pretty --data terraform.rego --input tfplan.json "data.terraform.analysis.score"
 
 Output: 20
 ```
